@@ -1,0 +1,33 @@
+shard-spec: "0.4.0"
+shard: "@nuucognition/orbtest"
+id: b6501c81-0ce9-4615-9ab7-177569d79c4a
+source:
+  id: 8230c52e-60b9-4804-8b84-5277ccf004cf
+version: "0.11.1"
+name: Orbtest
+shorthand: ot
+description: Operate the flint orbtest CLI on a product for UI tests and behaviour tests, and record its tests, runs, stories, suites, and releases in the Mesh
+dependencies:
+  "@nuucognition/flint": ""
+  "@nuucognition/orbh": ""
+types:
+  - Test
+  - Run
+  - Story
+  - Suite
+  - Release
+folders:
+  - Mesh/Types/Tests/
+  - Mesh/Archive/Tests/
+  - Mesh/Types/Runs/
+  - Mesh/Archive/Runs/
+  - Mesh/Types/Stories/
+  - Mesh/Archive/Stories/
+  - Mesh/Types/Suites/
+  - Mesh/Archive/Suites/
+  - Mesh/Types/Releases/
+  - Mesh/Archive/Releases/
+install:
+  - source: inst-ot-dashboard_tests.md
+    dest: Mesh/(Dashboard) Tests.md
+    mode: once
